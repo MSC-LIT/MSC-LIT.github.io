@@ -1,1 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Ferramenta de cálculo de riscos - COMIT</title>
+</head>
+<body>
+   <h1>Ferramenta de cálculo de riscos - COMIT</h1> 
+<input type="text" id="var1"/> + <input type="text" id="var2"/> 
 
+
+<p></p>
+
+
+<input type="button" value="Soma de riscos" onclick="calc()"/>
+<p></p>
+<input type="text" id="sum" readonly="readonly"/>
+ 
+<script>
+    function calc() {
+        let num1 = Number(document.querySelector("#var1").value);
+        let num2 = Number(document.querySelector("#var2").value);
+        let sum = num1 + num2;
+        document.getElementById("sum").value = sum;
+    }
+</script>
+ 
+</body>
+</html>
